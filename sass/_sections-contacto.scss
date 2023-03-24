@@ -1,0 +1,74 @@
+$color_1: var(--color);
+$color_2: #D1D7E2;
+$font-family_1: var(--title);
+$background-color_1: #ffffff;
+$background-color_2: #0e0e0c;
+
+.Contacto {
+	width: 100%;
+	background-color: $background-color_1;
+	margin-top: 1.5rem;
+}
+.contact {
+	font-family: $font-family_1;
+	color: $color_1;
+	text-decoration: underline wavy hotpink;
+	font-size: 2rem;
+	padding-bottom: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 7px;
+}
+.Red-social {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 260px;
+	height: 110px;
+}
+.red-social_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $background-color_2;
+	width: 62px;
+	height: 62px;
+	border-radius: 19px;
+}
+.instagram {
+	font-size: 2rem;
+	font-weight: 900;
+	color: $color_2;
+	cursor: pointer;
+}
+.linkedin {
+	font-size: 2rem;
+	font-weight: 900;
+	color: $color_2;
+	cursor: pointer;
+}
+.github {
+	font-size: 2rem;
+	font-weight: 900;
+	color: $color_2;
+	cursor: pointer;
+}
+.copyright {
+	width: 100%;
+	line-height: 1.5;
+	padding: 5px 5px;
+	background: #D1D7E2;
+	border-top: 1px solid #403854d9;
+}
+span {
+	font-size: .9rem;
+	color: $color_1;
+	font-family: $font-family_1;
+}

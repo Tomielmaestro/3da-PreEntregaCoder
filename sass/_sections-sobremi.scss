@@ -1,0 +1,106 @@
+/* titulo text */
+
+.sobreMi {
+    text-align: center;
+    margin-top: 18px;
+}
+  
+  /* imagen */
+  
+.block {
+    position: relative;
+    margin: .5rem auto 0;
+    width: 50%;
+    height: 400px;
+    background: linear-gradient(0deg, black, rgb(44, 43, 43));
+    z-index: -1;
+}
+  
+.glow {
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0bd0, #ff3300, #099fff);
+      background-size: 400%;
+      width: calc(100% + 5px);
+      height: calc(100% + 5px);
+      z-index: -1;
+      animation: animate 20s linear infinite;
+    }
+}
+  
+@keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 400% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+}
+  
+:glow::after {
+    filter: blur(40px);
+    opacity: 15;
+}
+  
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.img-sobreMi_main {
+    width: 50%;
+    height: 100%;
+    border-radius: 260px;
+    border: 2px solid black;
+    align-items: center;
+}
+  
+.title-sobreMi {
+    text-decoration: none;
+    color: var(--color);
+    text-align: center;
+    font-family: var(--title);
+    font-size: 1.8rem;
+    text-decoration: underline wavy hotpink;
+    text-transform: uppercase;
+}
+  
+.datos {
+    padding: 9px 0px 0px;
+    font-size: 1rem;
+    border-bottom: thick solid black;
+    font-family: var(--title);
+    text-align: center;
+}
+  
+.carta {
+    border: 5px groove black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.estudios {
+    width: 100%;
+    text-decoration: double underline;
+    font-size: 1rem;
+    padding: 5px 8px;
+    text-align: start;
+}
+  
+.parrafo {
+    color: var(--color);
+    font-family: var(--paragraph);
+    font-size: 1.5rem;
+    padding: .5rem .5rem;
+}
+  

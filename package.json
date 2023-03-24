@@ -1,0 +1,16 @@
+{
+  "name": "2da-preentrega",
+  "version": "1.0.0",
+  "description": "Migrando secciones a SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass":"node-sass sass/main.scss style/main.css --watch"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
